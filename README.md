@@ -19,32 +19,37 @@ Este proyecto simula un manejador de tipos de datos que soporta tipos atómicos,
    git clone git@github.com\:ANGRODHER/LenguajeDeProgramacionTarea3.git
    cd LenguajeDeProgramacionTarea3
 
+---
+
 2. **Crear y activar un entorno virtual:**
 
 python3 -m venv venv
 source venv/bin/activate  # En Linux
-# venv\Scripts\activate     # En Windows
+venv\Scripts\activate     # En Windows
 
 3. **Instalar las dependencias::**
 
 pip install -e .
 pip install pytest
+---
 
-**Ejecutar el programa principal**
+# Ejecutar el programa principal
 Para ejecutar el programa principal y comenzar a interactuar con el manejador de tipos de datos, usa el siguiente comando:
 python src/main.py
+---
 
-**Ejecutar las pruebas**
+# Ejecutar las pruebas
 Para ejecutar las pruebas unitarias, usa el siguiente comando:
 python -m pytest test/
+---
 
-**Estructura del Proyecto**
+# Estructura del Proyecto
 LenguajeDeProgramacionTarea3/
 │
-├── setup.py                # Configuración del paquete
+├── setup.py               
 ├── src/
-│   ├── __init__.py         # Inicialización del paquete
-│   ├── main.py             # Programa principal
-│   └── manejador_tipos.py  # Implementación del manejador de tipos
+│   ├── __init__.py         
+│   ├── main.py             
+│   └── manejador_tipos.py  
 └── test/
-    └── test_manejador.py   # Pruebas unitarias
+    └── test_manejador.py   
