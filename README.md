@@ -44,12 +44,12 @@ python -m pytest test/
 ---
 
 # Estructura del Proyecto
-LenguajeDeProgramacionTarea3/
+LenguajeDeProgramacionTarea3
 │
 ├── setup.py               
-├── src/
+├── src
 │   ├── __init__.py         
 │   ├── main.py             
 │   └── manejador_tipos.py  
-└── test/
+└── test
     └── test_manejador.py   
