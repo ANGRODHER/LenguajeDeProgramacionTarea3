@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/LenguajeDeProgramacionTarea3.egg-info/PKG-INFO
+src/LenguajeDeProgramacionTarea3.egg-info/SOURCES.txt
+src/LenguajeDeProgramacionTarea3.egg-info/dependency_links.txt
+src/LenguajeDeProgramacionTarea3.egg-info/top_level.txt
+test/test_manejador.py
