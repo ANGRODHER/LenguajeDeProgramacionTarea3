@@ -13,7 +13,7 @@ class TipoAtomico:
 class Struct:
     def __init__(self, nombre, campos):
         self.nombre = nombre
-        self.campos = campos  # Lista de tipos (TipoAtomico, Struct, Union)
+        self.campos = campos  
 
     def tamaño(self, estrategia="sin_empaquetar"):
         if estrategia == "empaquetado":
@@ -40,7 +40,7 @@ class Struct:
             return tamaño_total
 
     def alineacion(self):
-        return max(c.alineacion for c in self.campos)  # Sin paréntesis
+        return max(c.alineacion for c in self.campos)  
 
     def padding(self, estrategia="sin_empaquetar"):
         return self.tamaño(estrategia) - sum(c.tamaño(estrategia) for c in self.campos)
@@ -48,13 +48,13 @@ class Struct:
 class Union:
     def __init__(self, nombre, campos):
         self.nombre = nombre
-        self.campos = campos  # Lista de tipos (TipoAtomico, Struct, Union)
+        self.campos = campos  
 
     def tamaño(self, estrategia="sin_empaquetar"):
         return max(c.tamaño(estrategia) for c in self.campos)
 
     def alineacion(self):
-        return max(c.alineacion for c in self.campos)  # Sin paréntesis
+        return max(c.alineacion for c in self.campos)  
 
     def padding(self, estrategia="sin_empaquetar"):
         return self.tamaño(estrategia) - max(c.tamaño(estrategia) for c in self.campos)
